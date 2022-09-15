@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tarik Nasuhoglu | iOS Engineer</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Tarik Nasuhoglu iOS Engineer">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/cssshake-min.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			var firstClick = false
+			document.onclick= function(event) {
+				if(firstClick == false) {
+					var audio = document.createElement("AUDIO")
+					audio.setAttribute('id','audioId');
+					document.body.appendChild(audio);
+					audio.src = "startup.mp3"
+					audio.play()
+				}
+				firstClick = true
+			}
+		</script>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="main">
+				<!-- Header -->
+					<header id="header">
+						<h1><!-- <img class="profilPicture" src="assets/css/images/tariknasuhoglu.jpg" />-->  Hi, I'm Cengizhan! <img class="handwave constant-tilt-shake" src="assets/css/images/wavinghand.png"/></h1>
+        				<p>3D Artist | Animator | Game Developer</p>
+						<nav>
+							<ul>
+								<li><a href="https://github.com/cengocengo" target="_blank" class="icon brands fa-github"><span>GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/cengizhan-eren" target="_blank" class="icon brands fa-linkedin"><span>LinkedIn</span></a></li>
+							</ul>
+						</nav>
+					</header>
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
