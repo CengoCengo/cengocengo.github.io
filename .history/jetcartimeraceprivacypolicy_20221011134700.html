@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/cssshake-min.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script>
+        var firstClick = false
+        document.onclick= function(event) {
+            if(firstClick == false) {
+                var audio = document.createElement("AUDIO")
+                audio.setAttribute('id','audioId');
+                document.body.appendChild(audio);
+                audio.src = "startup.mp3"
+                audio.play()
+            }
+            firstClick = true
+        }
+    </script>
+
+
+    <title>Jet Car Time Race Privacy Policy</title>
+</head>
+<body>
+
+    <body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="main">
+				<!-- Header -->
+					<header id="header">
+						<h1><!-- <img class="profilPicture" src="assets/css/images/xxx.jpg" />-->  Jet Car Time Race Privacy Policy </h1>
+        				<p>Cengizhan Eren built the Jet Car Time Race game as an Ad Supported game. </p>
+                        <p>This SERVICE is provided by Cengizhan Eren at no cost and is intended for use as is.</p>
+						<nav>
+							<ul>
+								<li><a href="https://github.com/cengocengo" target="_blank" class="icon brands fa-github"><span>GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/cengizhan-eren" target="_blank" class="icon brands fa-linkedin"><span>LinkedIn</span></a></li>
+							</ul>
+						</nav>
+					</header>
+			</div>
+		</div>
+        <script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+</body>
+</html>
